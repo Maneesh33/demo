@@ -11,7 +11,7 @@ try:
     driver = webdriver.Chrome()
 except Exception as e:
     # If that fails, use the explicit ChromeDriver path
-    chromedriver_path = r"C:\Users\Anju\Downloads\chromedriver-win64"
+    chromedriver_path = r"C:\Users\Anju\Downloads\chromedriver-win64" 
     service = Service(chromedriver_path)
     driver = webdriver.Chrome(service=service)
 
@@ -21,7 +21,7 @@ try:
     
     # Find search bar, type query, and submit
     search_box = driver.find_element(By.NAME, "q")
-    search_box.send_keys("robotics")
+    search_box.send_keys("chatgpt")
     search_box.send_keys(Keys.RETURN)
     
     # Wait to see results
